@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <title>About Me</title>
+   <body class="general-page">
+        <style>
+            @font-face { font-family: Mirage; src: url('fonts/Mirage Final.ttf'); }
+            @font-face { font-family: Alike Angular; src: url('fonts/AlikeAngular-Regular.ttf'); }
+            .center-image { display: block; margin-left: auto; margin-right: auto; width: 50%; }
+            .center-text {
+            text-align: center;
+            font-family: 'Alike Angular';
+            font-size: 20px;
+            }
+            .logo-font {
+            font-family: 'Mirage'; font-size: 50px; text-align: center; background-image: linear-gradient(black, green); color: transparent; background-clip: text;
+            
+            
+            }
+
+
+            .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding: 20px;
+            }
+
+            
+
+            /* Three image containers (use 25% for four, and 50% for two, etc) */
+            .column {
+            float: left;
+            width: 30%;
+            padding: 5px;
+            }
+
+            /* Clear floats after image containers */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            #wrapper {
+            width: 700px;
+            margin: 0 auto;
+            background-color: rgb(212, 234, 178);
+            padding: 10px;
+            border-radius: 5%;
+            }
+
+
+            .general-page{
+            background-image: linear-gradient(rgb(165, 203, 158), rgb(110, 138, 110));
+            background-repeat:none;
+            background-size: cover;
+            }
+
+            #imgHover{
+            display:none;
+            }
+
+            #imgDiv:hover #imgRegular{
+            display:none;
+            }
+
+            #imgDiv:hover #imgHover{
+            display:inline;
+            }
+
+            
+            
+        </style>
+        <h1 class="logo-font">ABOUT ME</h1>
+
+        <a href="index.html"><p style="font-family: 'Alike Angular';font-size: 20px;
+            text-align: center;
+            padding: -50px"">Home</p></a>
+        
+        <div id="wrapper">
+            <div class="container">
+                <div style="width: 350px;">
+                    <img style="height: 300px"src="mascotgirl.png">
+
+                </div>
+                <div style="width: 350px;">
+                    <p style="font-family: 'Alike Angular';font-size: 11; text-align: center;">
+                            Abs Hall (she/they) is a Brisbane-based Game Artist, Illustrator and Storyboard Artist. They have a background in storyboarding for animation, with 4+ years professional experience. 
+                    </p>
+                    <p style="font-family: 'Alike Angular';font-size: 11; text-align: center;">
+                            Abs has recently moved to game dev, where she draws concept art and models 3D characters for indie games projects. Her work is informed by growing up in the 2000s, retro toylines, horror media and her own queer and neurodiverse experience.
+                    </p>
+
+                </div>
+            </div>
+            <p style="font-family: 'Alike Angular';font-size: 11; text-align: center;">
+                Download my <a href="AbsHall_CV.pdf" download>CV</a>
+            </p>
+            <p style="font-family: 'Alike Angular';font-size: 11; text-align: center;">
+                <img src="emailicon.png"style="height: 20px;"> abshall.art@gmail.com
+            </p>
+            <p style="font-family: 'Alike Angular';font-size: 11; text-align: center;">
+                <img src="instaicon.png"style="height: 20px;"> <a href="https://www.instagram.com/swampsnail.art/">Instagram</a>
+            </p>
+            <p style="font-family: 'Alike Angular';font-size: 11; text-align: center;">
+                <img src="itchicon.png"style="height: 20px;"> <a href="https://swampsnail.itch.io/">Itch.io</a>
+            </p>
+        </div>
+        
+    </body>
+    <footer>
+       
+        <div style="text-align: center; margin-top: 20px;">
+        <i>~*~* I coded this website myself in html! *~*~</i>
+        </div>
+    </footer>
+    
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+ 
+<html>
+   
+    <title>SwampSnail.Art</title>
+    <body class="general-page">
+        <style>
+            @font-face { font-family: Mirage; src: url('fonts/Mirage Final.ttf'); }
+            @font-face { font-family: Alike Angular; src: url('fonts/AlikeAngular-Regular.ttf'); }
+            .center-image { display: block; margin-left: auto; margin-right: auto; width: 50%; }
+            .center-text {
+            text-align: center;
+            font-family: 'Alike Angular';
+            font-size: 20px;
+            }
+            .logo-font {
+            font-family: 'Mirage'; font-size: 100px; text-align: center; background-image: linear-gradient(black, green); color: transparent; background-clip: text;
+            
+            }
+
+
+            .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top:-60px;
+            }
+
+            .speech-bubble {
+            font-size: 20px;
+            background: #ffffff;
+	        border-radius: .4em;
+            position:relative;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top:5px;
+            padding-bottom:5px;
+            }
+
+            .speech-bubble:after {
+	        content: '';
+	        position: absolute;
+	        left: 0;
+	        top: 50%;
+	        width: 0;
+	        height: 0;
+	        border: 20px solid transparent;
+	        border-right-color: #ffffff;
+	        border-left: 0;
+	        border-bottom: 0;
+	        margin-top: -10px;
+	        margin-left: -20px;
+            }
+            
+
+
+
+            /* Three image containers (use 25% for four, and 50% for two, etc) */
+            .column {
+            float: left;
+            width: 30%;
+            padding: 5px;
+            }
+
+            /* Clear floats after image containers */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+            #wrapper {
+            width: 500px;
+            margin: 0 auto;
+            background-color: rgb(212, 234, 178);
+            padding: 10px;
+            border-radius: 5%;
+            }
+
+            #commission_box {
+            width: 100px;
+            margin: 0 auto;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5%;
+            float: right;
+            }
+
+            .general-page{
+            background-image: linear-gradient(rgb(165, 203, 158), rgb(110, 138, 110))
+            }
+
+            #imgHover{
+            display:none;
+            }
+
+            #imgDiv:hover #imgRegular{
+            display:none;
+            }
+
+            #imgDiv:hover #imgHover{
+            display:inline;
+            }
+
+            
+            
+        </style>
+        <h1 class="logo-font">SwampSnail.Art</h1>
+        <div class="container">
+            <div>
+            <img height="120px"src="tinymascot.png">
+            </div>
+            <div style="font-family: 'Alike Angular';"class="speech-bubble" >            
+            <p>Commissions are currently <a style="color:green" href="https://forms.gle/M7WVisbvjwGJyTWY6">OPEN!</a></p>
+            
+            </div>
+        </div>
+        <div id="wrapper">
+        <p class="center-text">
+            Hi, I'm <a href="AboutMe.html"><b>Abs</b></a>, a Brisbane-based <b>Game Artist, Storyboard Artist and Illustrator</b> with a love of Y2K, retro toylines and horror.
+        </p>
+        <p class="center-text">
+            Follow me on <a href="https://www.instagram.com/swampsnail.art/">Instagram</a> for art and <a href="https://swampsnail.itch.io/">Itch.io</a> for indie games!
+        </p>
+        <div class="row">
+            <div class="column" id="imgDiv">
+                <a href="2DArt.html"><img id="imgRegular" height="150px"src="2dArtIcon_Idle.png"/><img height="150px" id="imgHover" src="2dArtIcon_Hover.png"/></a>
+                <p style="text-align: center; width:150px; font-family: 'Alike Angular'; font-size: 16px;">2D Art</p>
+            </div>
+            <div class="column" id="imgDiv">
+                <a href="3DArt.html"><img id="imgRegular" height="150px"src="3dArtIcon_Idle.png"/><img height="150px" id="imgHover" src="3dArtIcon_Hover.png"/></a>
+                <p style="text-align: center; width:150px; font-family: 'Alike Angular'; font-size: 16px;">3D Art</p>
+            </div>
+            
+            <div class="column" id="imgDiv">
+                <a href="Storyboards.html"><img id="imgRegular" height="150px"src="StoryboardIcon_Idle.png"/><img height="150px" id="imgHover" src="StoryboardIcon_Hover.png"/></a>
+                <p style="text-align: center; width:150px; font-family: 'Alike Angular'; font-size: 16px;">Storyboards</p>
+            </div>
+        </div>
+        </div>
+        
+    </body>
+    
+    <footer>
+       
+        <div style="text-align: center; margin-top: 20px;">
+        <i>~*~* I coded this website myself in html! *~*~</i>
+        </div>
+    </footer>
+</html>
