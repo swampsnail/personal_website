@@ -14,7 +14,7 @@
     <a href="index.html"><p style="font-family: 'Alike Angular';font-size: 20px;
             text-align: center;
             padding: -20px"">Home</p></a>
-    <body id="general-page" style="overflow: auto; background-size: cover; background-repeat: no-repeat;">
+    <body class="general-page">
         <style>
             @font-face { font-family: Mirage; src: url('fonts/MirageGothic.ttf'); }
             @font-face { font-family: Alike Angular; src: url('fonts/AlikeAngular-Regular.ttf'); }
@@ -59,10 +59,12 @@
             padding: 10px;
             border-radius: 5%;
             }
-            #general-page{
+            .general-page{
             background-image: linear-gradient(rgb(165, 203, 158), rgb(110, 138, 110));
-            background-repeat:no-repeat;
-            background-size: cover;
+			width: 100vw;
+			height: 100vh;
+			background-size: contain;
+			background-position: center, center;
             }
             .center-image { display: block; margin-left: auto; margin-right: auto; }
         </style>
@@ -118,5 +120,6 @@
     </footer>
 
 </html>
+
 
 
