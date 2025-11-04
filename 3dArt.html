@@ -16,6 +16,10 @@
             padding: -20px"">Home</p></a>
     <body class="general-page">
         <style>
+			html {
+    		height: 100%;
+			}
+			
             @font-face { font-family: Mirage; src: url('fonts/MirageGothic.ttf'); }
             @font-face { font-family: Alike Angular; src: url('fonts/AlikeAngular-Regular.ttf'); }
             div.desc {
@@ -56,8 +60,12 @@
             margin: 0 auto;
             
             background-color: rgb(212, 234, 178);
-            padding: 10px;
-            border-radius: 5%;
+            border: 34px solid transparent;
+    		border-image: url(laceborder.png) 40 round;
+    		background-clip: padding-box;
+    		padding: 17px;
+			border-image-slice: 34;
+			border-image-repeat: repeat;
             }
             .general-page{
             background: linear-gradient(rgb(165, 203, 158), rgb(110, 138, 110));
@@ -120,6 +128,7 @@
     </footer>
 
 </html>
+
 
 
 
