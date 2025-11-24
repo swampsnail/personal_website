@@ -41,21 +41,28 @@
             clear: both;
             display: table;
             }
-            #wrapper {
+             #wrapper {
             width: 700px;
             margin: 0 auto;
+            
             background-color: rgb(212, 234, 178);
-            padding: 10px;
-            border-radius: 5%;
+            border: 34px solid transparent;
+    		border-image: url(laceborder.png) 40 round;
+    		background-clip: padding-box;
+    		padding: 17px;
+			border-image-slice: 34;
+			border-image-repeat: repeat;
             }
 
 
-            .general-page{
-            background-image: linear-gradient(rgb(165, 203, 158), rgb(110, 138, 110));
+             .general-page{
+            background-image: linear-gradient(rgb(165, 203, 158), rgb(110, 138, 110))!important;
+			margin: 8px;
 			width: 100vw;
 			height: 200vh;
 			background-size: cover;
 			background-position: center, center;
+			background-repeat: no-repeat;
             }
 
             #imgHover{
@@ -82,7 +89,12 @@
         <div id="wrapper">
             <div class="container">
                 <div style="width: 350px;">
-                    <img style="height: 300px"src="mascotgirl.png">
+                    <img style="height: 300px; border: 34px solid transparent;
+    		border-image: url(laceborder.png) 40 round;
+    		background-clip: padding-box;
+    		padding: 17px;
+			border-image-slice: 34;
+			border-image-repeat: repeat;"src="Abs_dithered.png">
 
                 </div>
                 <div style="width: 350px;">
@@ -119,6 +131,7 @@
     
 
 </html>
+
 
 
 
